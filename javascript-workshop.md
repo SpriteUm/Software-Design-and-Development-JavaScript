@@ -190,35 +190,30 @@ let person = {
 </head>
 <body>
     <script>
+        let studentnumber = "67030109";
+        let name = "นวพล";
+        const midtermscores = 73;
+        const finalscore = 61;
 
-        let math = 12
-        let technogy = 15
-        let history = 8
-
-        let caculate = math + technogy + history;
-        let caculate_a = caculate / 3
-
-        console.log(caculate_a); // 11.66
+        let student ={
+            studentnumber: 67030109,
+            name: "นวพล",
+            major:"เทคโนโลยีคอมพิวเตอร์",
+            grade: 3.00
+            }
+    
+        console.log(studentnumber); 
+        console.log(name); 
+        console.log(midtermscores); 
+        console.log(finalscore); 
+        console.log(student); 
     </script>
-    <script>
-        let productname = "Cake";
-        let productprice = 220
-
-        let vat = productprice * 0.07
-        let total = productprice + vat
-
-        console.log("Product :" + productname);
-        console.log("Productprice :" + productprice +"Bath");
-        console.log("VAT 7% :" + vat.toFixed(2) + "Bath");
-        console.log("SumpriecVAT 7% :" + total.toFixed(2) + "Bath");
-    </script>
-   
+    
 </body>
 </html>
 [บันทึกโค้ด ที่นี่]
 ```
-![image](https://github.com/user-attachments/assets/14877211-f5fa-47fc-a17a-1759b32b4d37)
-
+![image](https://github.com/user-attachments/assets/2ec15dce-85ef-4284-9741-550972339f25)
 [รูปผลการทดลองที่ 2.1]
 
 
@@ -279,24 +274,35 @@ number /= 2;          // เท่ากับ number = number / 2
     <title>Document</title>
 </head>
 <body>
- <script>
+    <script>
 
-    let math = 12
-    let technogy = 15
-    let history = 8
+        let math = 12
+        let technogy = 15
+        let history = 8
 
-    let caculate = math + technogy + history;
-    let caculate_a = caculate / 3
+        let caculate = math + technogy + history;
+        let caculate_a = caculate / 3
 
-    console.log(caculate_a); // 11.66
- </script>
-    
+        console.log(caculate_a); // 11.66
+    </script>
+    <script>
+        let productname = "Cake";
+        let productprice = 220
+
+        let vat = productprice * 0.07
+        let total = productprice + vat
+
+        console.log("Product :" + productname);
+        console.log("Productprice :" + productprice +"Bath");
+        console.log("VAT 7% :" + vat.toFixed(2) + "Bath");
+        console.log("SumpriecVAT 7% :" + total.toFixed(2) + "Bath");
+    </script>
+   
 </body>
 </html>
 [บันทึกโค้ด ที่นี่]
 ```
-![image](https://github.com/user-attachments/assets/db654c3d-e8c9-4afc-a1c7-6943de5f1c81)
-
+![image](https://github.com/user-attachments/assets/7665d82c-8d6e-4797-b8a4-b43fd2788753)
 [รูปผลการทดลองที่ 2.2]
 
 ### 2.3 การควบคุมการทำงาน
