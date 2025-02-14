@@ -76,8 +76,55 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
    - มีปุ่มเมื่อคลิกแล้วจะแสดงข้อความที่กรอกในช่องข้อความ  (สามารถใช้ document.getElementById('id ของ textbox').value เพื่อดึงข้อมูลในช่อง)
 ### บันทึกผลการทดลอง 
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <title>ทดลอง JavaScript</title>
+</head>
+<body>
+    <!-- Inline JavaScript -->
+    <button onclick="alert('นาย นวพล สวัสดี')">แสดงชื่อนักศึกษา</button>
+
+    <!-- ทดสอบ Internal JavaScript -->
+    <button id="btn2">แสดงวันที่ปัจจุบัน</button>
+
+    <!-- ทดสอบ External JavaScript -->
+    <button id="btn3" onclick="hello3();">แสดงเวลาปัจจุบัน</button>
+
+    <!-- กล่องข้อความ -->
+    <input type="text" id="textinput">
+    <button  onclick="showtext();">แสดงเวลาปัจจุบัน</button>
+    
+    <script>
+        function showtext(){
+            text = document.getElementById('textinput').value;
+            alert('ข้อมูลที่กรอก :' + text)
+        }
+    </script>
+
+    <!-- Internal JavaScript -->
+    <script>
+        document.getElementById('btn2').onclick = function() {
+            alert('แสดงวันที่ปัจจุบัน' + new Date().toDateString());
+        };
+    </script>
+
+    <!-- External JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
+
+script.js
+function hello3(){
+    alert('12:21 AM');
+}
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/30467a48-142f-449f-a5b4-26483460a0f8)
+![image](https://github.com/user-attachments/assets/5935618d-a915-47c5-818d-3de2cfc8e8f7)
+![image](https://github.com/user-attachments/assets/29dbf4f0-cf20-4791-8a32-89ea10b3a128)
+![image](https://github.com/user-attachments/assets/d2b8b1f4-4c96-4acd-b9e6-4203de7dcf70)
 [รูปผลการทดลองที่ 1]
   
 ## การทดลองที่ 2: พื้นฐาน JavaScript
