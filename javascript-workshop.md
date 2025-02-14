@@ -181,19 +181,40 @@ let person = {
 
 ### บันทึกผลการทดลอง 2.1
 ```html
-let studentnumber = "67030109";
-let name = "นวพล";
-const midtermscores = 73;
-const finalscore = 61;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let studentnumber = "67030109";
+        let name = "นวพล";
+        const midtermscores = 73;
+        const finalscore = 61;
 
-let student ={
-    studentnumber: 67030109,
-    name: "นวพล",
-    major:"เทคโนโลยีคอมพิวเตอร์",
-    grade: 3.00
-}
+        let student ={
+            studentnumber: 67030109,
+            name: "นวพล",
+            major:"เทคโนโลยีคอมพิวเตอร์",
+            grade: 3.00
+            }
+    
+        console.log(studentnumber); 
+        console.log(name); 
+        console.log(midtermscores); 
+        console.log(finalscore); 
+        console.log(student); 
+    </script>
+    
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/6ea534a2-5cf0-42cf-96c9-4f280d36ff87)
+
 [รูปผลการทดลองที่ 2.1]
 
 
@@ -246,8 +267,32 @@ number /= 2;          // เท่ากับ number = number / 2
 
 ### บันทึกผลการทดลอง 2.2
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+ <script>
+
+    let math = 12
+    let technogy = 15
+    let history = 8
+
+    let caculate = math + technogy + history;
+    let caculate_a = caculate / 3
+
+    console.log(caculate_a); // 11.66
+ </script>
+    
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/db654c3d-e8c9-4afc-a1c7-6943de5f1c81)
+
 [รูปผลการทดลองที่ 2.2]
 
 ### 2.3 การควบคุมการทำงาน
