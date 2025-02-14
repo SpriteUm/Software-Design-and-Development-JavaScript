@@ -121,6 +121,10 @@ function hello3(){
 }
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/a87a2ca9-a464-4991-90c7-ad8f321e189e)
+![image](https://github.com/user-attachments/assets/630f4671-4675-4d05-9ed8-cfbda828b13b)
+![image](https://github.com/user-attachments/assets/0a57a9c3-d76c-4072-b770-cceb2384b3c1)
+![image](https://github.com/user-attachments/assets/8aee531b-27b3-4a94-b020-851d0474bb39)
 [รูปผลการทดลองที่ 1]
   
 ## การทดลองที่ 2: พื้นฐาน JavaScript
