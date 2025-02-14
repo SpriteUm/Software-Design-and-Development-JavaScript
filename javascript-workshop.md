@@ -181,6 +181,17 @@ let person = {
 
 ### บันทึกผลการทดลอง 2.1
 ```html
+let studentnumber = "67030109";
+let name = "นวพล";
+const midtermscores = 73;
+const finalscore = 61;
+
+let student ={
+    studentnumber: 67030109,
+    name: "นวพล",
+    major:"เทคโนโลยีคอมพิวเตอร์",
+    grade: 3.00
+}
 [บันทึกโค้ด ที่นี่]
 ```
 [รูปผลการทดลองที่ 2.1]
