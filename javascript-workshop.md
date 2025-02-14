@@ -190,30 +190,34 @@ let person = {
 </head>
 <body>
     <script>
-        let studentnumber = "67030109";
-        let name = "นวพล";
-        const midtermscores = 73;
-        const finalscore = 61;
 
-        let student ={
-            studentnumber: 67030109,
-            name: "นวพล",
-            major:"เทคโนโลยีคอมพิวเตอร์",
-            grade: 3.00
-            }
-    
-        console.log(studentnumber); 
-        console.log(name); 
-        console.log(midtermscores); 
-        console.log(finalscore); 
-        console.log(student); 
+        let math = 12
+        let technogy = 15
+        let history = 8
+
+        let caculate = math + technogy + history;
+        let caculate_a = caculate / 3
+
+        console.log(caculate_a); // 11.66
     </script>
-    
+    <script>
+        let productname = "Cake";
+        let productprice = 220
+
+        let vat = productprice * 0.07
+        let total = productprice + vat
+
+        console.log("Product :" + productname);
+        console.log("Productprice :" + productprice +"Bath");
+        console.log("VAT 7% :" + vat.toFixed(2) + "Bath");
+        console.log("SumpriecVAT 7% :" + total.toFixed(2) + "Bath");
+    </script>
+   
 </body>
 </html>
 [บันทึกโค้ด ที่นี่]
 ```
-![image](https://github.com/user-attachments/assets/6ea534a2-5cf0-42cf-96c9-4f280d36ff87)
+![image](https://github.com/user-attachments/assets/14877211-f5fa-47fc-a17a-1759b32b4d37)
 
 [รูปผลการทดลองที่ 2.1]
 
