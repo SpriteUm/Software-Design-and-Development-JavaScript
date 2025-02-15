@@ -434,8 +434,63 @@ for (let i = 1; i <= 5; i++) {
 
 ### บันทึกผลการทดลอง 2.3
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    
+    //1. กำหนดตัวเลข และตรวจสอบว่าตัวเลขที่กำหนดเป็นเลขคู่หรือเลขคี่
+    let number = 5  ;  
+    if (number % 2 == 0) {
+    console.log(number + " เป็นเลขคู่");
+    } 
+    else {
+    console.log(number + " เป็นเลขคี่");
+    }
+
+    //2. สร้าง loop แบบ for แสดงตารางสูตรคูณ แม่ 2 และ loop แบบ while แสดงสูตรคูณ แม่ 3
+    console.log("สูตรคูณแม่ 2:");
+    for (let i = 1; i <= 12; i++) {
+        console.log(`2 x ${i} = ${2 * i}`);
+    }
+
+    console.log("\nสูตรคูณแม่ 3:");
+    let i = 1;
+    while (i <= 12) {
+        console.log(`3 x ${i} = ${3 * i}`);
+        i++;
+    }
+
+    //3. เขียนโปรแกรมนับถอยหลังจาก 10 ถึง 1
+    console.log("นับถอยหลังจาก 10 ถึง 1:");
+    for (let i = 10; i >= 1; i--) {
+        console.log(i);
+    }
+
+    //4. เขียนโปรแกรมกำหนดอายุ และตรวจสอบช่วงวัยตามอายุที่กำหนด (กำหนดอายุแต่ละช่วงวัย วัยเด็ก วัยรุ่น วัยผู้ใหญ่)
+    let age = 5;
+    if (age >= 0 && age <= 12) {
+        console.log(age + " เป็นวัยเด็ก");
+        } 
+        else if (age >= 13 && age <= 19){
+        console.log(age + " เป็นวัยรุ่น");
+        }
+        else {
+        console.log(age + " เป็นวัยผู้ใหญ่");
+        }
+    </script>
+
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/0bbce3bf-4e5d-40ab-8bb5-19fff0d1598a)
+
 [รูปผลการทดลองที่ 2.3]
 
 ### 2.4 Functions และ Arrow Functions
