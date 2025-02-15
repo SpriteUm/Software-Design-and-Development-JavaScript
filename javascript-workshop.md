@@ -114,7 +114,9 @@ JavaScript สามารถเพิ่มลงในเว็บเพจไ
     <script src="script.js"></script>
 </body>
 </html>
+```
 
+```javascript
 script.js
 function hello3(){
     alert('12:21 AM');
@@ -603,8 +605,59 @@ process(function() {
 
 ### บันทึกผลการทดลอง 2.4.1
 ```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scriptlab2.4.js"></script>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+```javascript
+//1.สร้าง function คำนวณค่า BMI (ดัชนีมวลกาย) จากน้ำหนักและส่วนสูง
+function calculateBMI(weight, height){
+    const calcub =weight / (height * height);
+    return  calcub
+    }
+// ทดสอบใช้งาน
+console.log("BMI:", calculateBMI(67, 1.67).toFixed(2)); 
+
+//2.สร้าง function ที่รับชื่อและอายุ แล้วแสดงข้อความทักทายที่เหมาะสมกับอายุ
+function helloEveryone(name, age) {
+    let message = "";
+
+    if (age < 13) {
+        message = "สวัสดีครับน้องพี่ " + name;
+    } else if (age < 20) {
+        message = "สวัสดีครับเพื่อน " + name;
+    } else {
+        message = "สวัสดีครับพี่" + name;
+    }
+    console.log(message);
+}
+// ทดสอบใช้งาน
+console.log(helloEveryone("ปลื้ม", 5));
+console.log(helloEveryone("สไปร์ท", 17));
+console.log(helloEveryone("เนย", 32));
+
+//3.เขียน function ตรวจสอบรหัสผ่านว่ามีความยาวมากกว่า 8 ตัวอักษรหรือไม่
+function checkPassword(password) {
+    if (password.length > 8) {
+        return "รหัสผ่านโครตปลอดภัย";
+    } else {
+        return "รหัสผ่านโคตรสั้น";
+    }
+}
+
+console.log(checkPassword("A67030109"));
+console.log(checkPassword("Nawa67"));
+```
+![image](https://github.com/user-attachments/assets/a438cecc-5299-400e-80fb-8d3db79c3378)
 [รูปผลการทดลองที่ 2.4.1]
 
 
