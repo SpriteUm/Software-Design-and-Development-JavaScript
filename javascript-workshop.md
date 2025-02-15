@@ -699,8 +699,46 @@ console.log("เลขคู่:", evenNumbers); // [2, 4]
 
 ### บันทึกผลการทดลอง 2.4.2
 ```html
+<!DOCTYPE html>
+<html land="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="scriptlab2.js"></script>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+```javascript
+//1.สร้าง function คำนวณค่า BMI (ดัชนีมวลกาย) จากน้ำหนักและส่วนสูง
+const calculateBMI = (weight, height) => (weight / (height ** 2)).toFixed(2);
+// ทดสอบใช้งาน
+console.log("BMI:", calculateBMI(67, 1.67)); 
+
+
+//2.สร้าง function ที่รับชื่อและอายุ แล้วแสดงข้อความทักทายที่เหมาะสมกับอายุ
+const greetUser = (name, age) => {
+    return age < 13 ? `สวัสดีครับน้องพี่ ${name}` :
+           age < 20 ? `สวัสดีครับเพื่อน ${name}` :
+                      `สวัสดีครับพี่ ${name}`;
+};
+// ทดสอบใช้งาน
+console.log(greetUser("ปลื้ม", 5));
+console.log(greetUser("สไปร์ท", 17));
+console.log(greetUser("เนย", 32));
+
+
+//3.เขียน function ตรวจสอบรหัสผ่านว่ามีความยาวมากกว่า 8 ตัวอักษรหรือไม่
+const checkPassword = password => password.length > 8 ? "รหัสผ่านแข็งแรง" : "รหัสผ่านสั้นเกินไป";
+// ทดสอบใช้งาน
+console.log(checkPassword("67030109"));
+console.log(checkPassword("A67030109"));
+```
+![image](https://github.com/user-attachments/assets/c506f1be-25aa-460d-ae9b-84a71c88e2c5)
+
 [รูปผลการทดลองที่ 2.4.2]
 
 
