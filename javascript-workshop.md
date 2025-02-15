@@ -648,16 +648,17 @@ console.log(helloEveryone("เนย", 32));
 //3.เขียน function ตรวจสอบรหัสผ่านว่ามีความยาวมากกว่า 8 ตัวอักษรหรือไม่
 function checkPassword(password) {
     if (password.length > 8) {
-        return "รหัสผ่านโครตปลอดภัย";
+        return "รหัสผ่านปลอดภัย";
     } else {
-        return "รหัสผ่านโคตรสั้น";
+        return "รหัสผ่านสั้นเกินไป";
     }
 }
 
 console.log(checkPassword("A67030109"));
 console.log(checkPassword("Nawa67"));
 ```
-![image](https://github.com/user-attachments/assets/a438cecc-5299-400e-80fb-8d3db79c3378)
+![image](https://github.com/user-attachments/assets/121bd0ad-666a-4ff4-a826-e98b70735509)
+
 [รูปผลการทดลองที่ 2.4.1]
 
 
@@ -732,13 +733,12 @@ console.log(greetUser("เนย", 32));
 
 
 //3.เขียน function ตรวจสอบรหัสผ่านว่ามีความยาวมากกว่า 8 ตัวอักษรหรือไม่
-const checkPassword = password => password.length > 8 ? "รหัสผ่านแข็งแรง" : "รหัสผ่านสั้นเกินไป";
+const checkPassword = password => password.length > 8 ? "รหัสผ่านปลอดภัย" : "รหัสผ่านสั้นเกินไป";
 // ทดสอบใช้งาน
 console.log(checkPassword("67030109"));
 console.log(checkPassword("A67030109"));
 ```
-![image](https://github.com/user-attachments/assets/c506f1be-25aa-460d-ae9b-84a71c88e2c5)
-
+![image](https://github.com/user-attachments/assets/7120934d-3214-4d98-99f8-489d9f76d537)
 [รูปผลการทดลองที่ 2.4.2]
 
 
