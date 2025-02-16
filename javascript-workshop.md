@@ -807,8 +807,67 @@ console.log(checkPassword("A67030109"));
 
 ### บันทึกผลการทดลอง 3.1
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculate BMI</title>
+</head>
+<body>
+    <h2>คำนวณค่า BMI</h2>
+    <label for="weight">น้ำหนัก (กิโลกรัม)</label><br>
+    <input type="number" id="weight" placeholder="ใส่น้ำหนัก" step="0.1"><br><br>
+
+    <label for="height">ส่วนสูง (เซนติเมตร)</label><br>
+    <input type="number" id="height" placeholder="ใส่ส่วนสูง" step="0.1"><br>
+
+    <button onclick="calculateBMI()">คำนวณ BMI</button>
+
+    <p id="result"></p>
+
+    <script>
+        function calculateBMI() {
+            let weight = parseFloat(document.getElementById("weight").value);
+            let height = parseFloat(document.getElementById("height").value);
+
+            // แปลงส่วนสูงจากเซนติเมตรเป็นเมตร
+            height = height / 100;
+
+            // ตรวจสอบค่าที่รับมา
+            if (isNaN(weight) || isNaN(height) || weight <= 0 || height <= 0) {
+                document.getElementById("result").innerHTML = "กรุณากรอกข้อมูล น้ำหนัก ส่วนสูง ";
+                return;
+            }
+
+            // คำนวณค่า BMI
+            let bmi = (weight / (height ** 2)).toFixed(2);
+
+            // กำหนดสถานะตามค่า BMI
+            let status = "";
+            if (bmi < 18.5) {
+                status = "น้ำหนักต่ำกว่าเกณฑ์ (ผอม)";
+                
+            } else if (bmi < 24.9) {
+                status = "น้ำหนักปกติ (สมส่วน)";
+                
+            } else if (bmi < 29.9) {
+                status = "น้ำหนักเกิน (ท้วม)";
+                
+            } else {
+                status = "โรคอ้วน";
+            }
+
+            // แสดงผลลัพธ์
+            document.getElementById("result").innerHTML = `ค่า BMI ของคุณคือ ${bmi} (${status})`;
+        }
+    </script>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/b6f9da23-0fe0-4478-be28-108920907922)
+
 [รูปผลการทดลองที่ 3.1]
 
 ## การทดลองที่ 3.2 : การสร้างฟอร์มสำหรับจองห้องพัก
