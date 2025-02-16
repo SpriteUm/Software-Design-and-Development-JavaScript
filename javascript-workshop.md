@@ -1028,8 +1028,134 @@ console.log(checkPassword("A67030109"));
 
 ### บันทึกผลการทดลอง 3.2.2
 ```html
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ระบบจองห้องพักออนไลน์</title>
+    
+    <style>
+        body {
+            font-family: 'Sarabun', sans-serif;
+            max-width: 400px; /*เปลี่ยนขนาดความใหญ่ 600px เป็น 400px */
+            margin: 0; /*เปลี่ยน body ให้อยู่ทางซ้ายจากตอนแรกอยู่ ตรงกลาง*/
+            padding: 50px;/*เปลี่ยน body ให้ไม่อยู่ชิดมุมเกินไป*/
+            background-color: #5c82ff44; /*เปลี่ยนสี body ให้สวยขึ้น*/
+        }
+
+        h1 {
+            color: #38628b;
+            text-align: center;
+            margin-bottom: 10px;/*เปลี่ยน body ให้อยู่ใกล้กับ h1 มากขึ้น*/
+        }
+
+        form {
+            background-color: rgba(255, 255, 255, 0.705);
+            padding: 50px;
+            border-radius: 60px; /*ให้ body มีควาโค้งมนมากขี้น*/
+            box-shadow: 0 2px 4px rgba(0,0,0,0.5); /*ให้ใีความชัดของเงาเพิ่มขี้น*/
+        }
+
+        div {
+            margin-bottom: 15px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            color: #34495e;
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input:focus, select:focus {
+            outline: none;
+            border-color: #3498db;
+            box-shadow: 0 0 5px rgba(52,152,219,0.3);
+        }
+
+        button {
+            background-color: #2980b9;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background-color: #3498db;
+        }
+
+        @media (max-width: 480px) {
+            body {
+                padding: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>แบบฟอร์มจองห้องพัก</h1>
+    
+    <form id="bookingForm">
+        <div>
+            <label for="fullname">ชื่อ-นามสกุล:</label>
+            <input type="text" id="fullname" name="fullname" required>
+        </div>
+
+        <div>
+            <label for="email">อีเมล:</label>
+            <input type="email" id="email" name="email" required>
+        </div>
+
+        <div>
+            <label for="phone">เบอร์โทรศัพท์:</label>
+            <input type="tel" id="phone" name="phone" required>
+        </div>
+
+        <div>
+            <label for="checkin">วันที่เช็คอิน:</label>
+            <input type="date" id="checkin" name="checkin" required>
+        </div>
+
+        <div>
+            <label for="checkout">วันที่เช็คเอาท์:</label>
+            <input type="date" id="checkout" name="checkout" required>
+        </div>
+
+        <div>
+            <label for="roomtype">ประเภทห้องพัก:</label>
+            <select id="roomtype" name="roomtype" required>
+                <option value="">กรุณาเลือกประเภทห้องพัก</option>
+                <option value="standard">ห้องมาตรฐาน</option>
+                <option value="deluxe">ห้องดีลักซ์</option>
+                <option value="suite">ห้องสวีท</option>
+            </select>
+        </div>
+
+        <div>
+            <label for="guests">จำนวนผู้เข้าพัก:</label>
+            <input type="number" id="guests" name="guests" min="1" max="4" required>
+        </div>
+
+        <button type="submit">จองห้องพัก</button>
+    </form>
+</body>
+</html>
 [บันทึกโค้ด ที่นี่]
 ```
+![image](https://github.com/user-attachments/assets/535e223d-db12-409d-9871-be7e674c468d)
+
 [รูปผลการทดลองที่ 3.2.2]
 
 
